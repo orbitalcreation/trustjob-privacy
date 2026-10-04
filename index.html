@@ -13,42 +13,35 @@
   body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
                  "Helvetica Neue", Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.65;
-    max-width: 720px;
-    margin: 0 auto;
-    padding: 32px 20px 80px;
-    color: #1A1D21;
-    background: #FAFBFC;
+    font-size: 16px; line-height: 1.65; max-width: 720px;
+    margin: 0 auto; padding: 32px 20px 80px;
+    color: #1A1D21; background: #FAFBFC;
   }
   h1 { font-size: 28px; font-weight: 700; margin: 0 0 8px; letter-spacing: -0.3px; }
-  h2 {
-    font-size: 20px; font-weight: 600; margin: 40px 0 12px;
-    padding-top: 16px; border-top: 1px solid #DDE4EC; letter-spacing: -0.2px;
-  }
+  h2 { font-size: 20px; font-weight: 600; margin: 40px 0 12px;
+       padding-top: 16px; border-top: 1px solid #DDE4EC; letter-spacing: -0.2px; }
   h3 { font-size: 16px; font-weight: 600; margin: 24px 0 8px; }
   p, ul, ol { margin: 0 0 14px; }
   ul, ol { padding-left: 24px; }
   li { margin-bottom: 6px; }
   a { color: #1B3A5C; text-decoration: underline; }
   strong { font-weight: 600; }
-  code {
-    background: #E8EEF5; padding: 2px 6px; border-radius: 4px;
-    font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 14px;
-  }
+  code { background: #E8EEF5; padding: 2px 6px; border-radius: 4px;
+         font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 14px; }
   .updated { color: #4A5563; font-size: 14px; margin-bottom: 32px; }
-  .summary {
-    background: #E8EEF5; border: 1px solid #DDE4EC;
-    border-radius: 12px; padding: 20px 24px; margin: 24px 0 32px;
-  }
+  .summary { background: #E8EEF5; border: 1px solid #DDE4EC;
+             border-radius: 12px; padding: 20px 24px; margin: 24px 0 32px; }
   .summary p:last-child { margin-bottom: 0; }
   .toc { margin: 24px 0; padding: 20px 24px; border: 1px solid #DDE4EC; border-radius: 12px; }
   .toc h3 { margin-top: 0; }
   .toc ol { padding-left: 20px; margin-bottom: 0; }
-  footer {
-    margin-top: 60px; padding-top: 20px;
-    border-top: 1px solid #DDE4EC; font-size: 14px; color: #4A5563;
-  }
+  footer { margin-top: 60px; padding-top: 20px;
+           border-top: 1px solid #DDE4EC; font-size: 14px; color: #4A5563; }
+  .lang { display: flex; gap: 8px; margin-bottom: 24px; flex-wrap: wrap; }
+  .lang a { padding: 6px 12px; border-radius: 8px; text-decoration: none;
+            background: #E8EEF5; color: #1A1D21; font-size: 14px; font-weight: 500; }
+  .lang a.active { background: #1B3A5C; color: #FAFBFC; }
+  .lang a:hover:not(.active) { background: #D6E2EE; }
   @media (prefers-color-scheme: dark) {
     body { color: #E6EAF0; background: #0F1720; }
     a { color: #8FB4D9; }
@@ -57,16 +50,28 @@
     h2 { border-color: #2A3A4D; }
     .updated { color: #A8B5C5; }
     footer { color: #A8B5C5; border-color: #2A3A4D; }
+    .lang a { background: #1A2636; color: #E6EAF0; }
+    .lang a.active { background: #8FB4D9; color: #0F2438; }
+    .lang a:hover:not(.active) { background: #2A3A4D; }
   }
 </style>
 </head>
 <body>
 
+<nav class="lang">
+  <a href="index.html" class="active">🇬🇧 EN</a>
+  <a href="de.html">🇩🇪 DE</a>
+  <a href="es.html">🇪🇸 ES</a>
+  <a href="fr.html">🇫🇷 FR</a>
+  <a href="it.html">🇮🇹 IT</a>
+  <a href="pt.html">🇵🇹 PT</a>
+</nav>
+
 <h1>Privacy Policy</h1>
-<p class="updated">Effective date: 3 October 2026 · Last updated: 3 October 2026</p>
+<p class="updated">Effective date: 4 October 2026 · Last updated: 4 October 2026</p>
 
 <div class="summary">
-<p><strong>Short version:</strong> TrustJob runs entirely on your phone. We do not operate a server, we do not require an account, and we do not collect any personal information about you. Everything the app stores — saved jobs, tracked applications, settings, and the list of listings you have seen — stays on your device and never leaves it.</p>
+<p><strong>Short version:</strong> TrustJob runs entirely on your phone. We do not operate a server and we do not require an account. Everything the app stores — saved jobs, tracked applications, settings, and the list of listings you have seen — stays on your device and never leaves it. The app shows ads served by Google AdMob; purchasing the Supporter pack removes them permanently.</p>
 </div>
 
 <div class="toc">
@@ -77,6 +82,7 @@
 <li><a href="#device">Information stored on your device</a></li>
 <li><a href="#sources">Job listings from third-party sources</a></li>
 <li><a href="#third-party">Third-party services</a></li>
+<li><a href="#ads">Advertising and purchases</a></li>
 <li><a href="#future">Future account features</a></li>
 <li><a href="#rights">Your rights</a></li>
 <li><a href="#children">Children's privacy</a></li>
@@ -97,21 +103,19 @@
 <p>We do <strong>not</strong> collect, request, or store any personal information. This includes, but is not limited to:</p>
 <ul>
 <li>Your name, email address, or phone number</li>
-<li>Your location or IP address</li>
+<li>Your location or IP address (beyond what is required to deliver ads, see section 6)</li>
 <li>Your contacts, calendar, photos, or files</li>
-<li>Your device identifiers, advertising ID, or IMEI</li>
 <li>Your search queries, viewed listings, or application history</li>
-<li>Any data derived from your use of the app</li>
 </ul>
 
 <h3>2.2 Analytics and tracking</h3>
-<p>TrustJob contains <strong>no analytics, no tracking SDKs, no advertising networks, and no crash reporting services</strong>. We do not know how many users have installed the app, which features they use, or where they are located. This is intentional and permanent.</p>
+<p>TrustJob contains <strong>no analytics, no crash reporting, and no tracking SDKs of our own</strong>. The only third-party SDKs are Google AdMob (for ads) and Google Play Billing (for purchases). Both are described in section 6.</p>
 
 <h3>2.3 Permissions</h3>
-<p>TrustJob requests only the network permission required to fetch job listings from public APIs. It does not request access to your camera, microphone, location, contacts, storage, or any other sensitive permission.</p>
+<p>TrustJob requests only the network permission required to fetch job listings and to load ads. It does not request access to your camera, microphone, location, contacts, storage, or any other sensitive permission.</p>
 
 <h2 id="device">3. Information stored on your device</h2>
-<p>TrustJob stores the following data locally on your device using Android's standard mechanisms (SharedPreferences and Room database). This data is:</p>
+<p>TrustJob stores the following data locally on your device using Android's standard mechanisms. This data is:</p>
 <ul>
 <li><strong>Never transmitted</strong> to us or to any third party</li>
 <li><strong>Only accessible</strong> to the TrustJob app on your device</li>
@@ -121,7 +125,7 @@
 <h3>3.1 What is stored</h3>
 <ul>
 <li><strong>Saved jobs</strong> — listings you have explicitly saved, including title, company, description, and trust analysis</li>
-<li><strong>Tracked applications</strong> — jobs you have marked as applied to, plus their status (Applied, Interviewing, Offer, Rejected)</li>
+<li><strong>Tracked applications</strong> — jobs you have marked as applied to, plus their status</li>
 <li><strong>Seen jobs</strong> — a list of listings you have opened, used to power the "hide seen" filter</li>
 <li><strong>App settings</strong> — your preferences for theme, language, currency, filters, and display options</li>
 <li><strong>Repost fingerprints</strong> — anonymous cryptographic hashes used to detect duplicate or reposted listings</li>
@@ -137,7 +141,7 @@
 </ul>
 
 <h2 id="sources">4. Job listings from third-party sources</h2>
-<p>TrustJob retrieves job listings from publicly accessible, keyless job boards and APIs. When you open the app, it makes direct requests from your device to these sources. The sources receive only the standard technical information required by any HTTP request (such as your IP address and a generic user agent). They do not receive any information about you, your saved jobs, or your activity in the app.</p>
+<p>TrustJob retrieves job listings from publicly accessible, keyless job boards and APIs. When you open the app, it makes direct requests from your device to these sources. The sources receive only the standard technical information required by any HTTP request. They do not receive any information about you, your saved jobs, or your activity in the app.</p>
 <p>Current sources:</p>
 <ul>
 <li>Himalayas (himalayas.app)</li>
@@ -149,83 +153,98 @@
 <li>freehire.me</li>
 <li>Vacantes Digitales (vacantesdigitales.com)</li>
 </ul>
-<p>For company stability analysis, TrustJob also queries the following publicly available sources:</p>
+<p>For company stability analysis, TrustJob also queries:</p>
 <ul>
 <li>U.S. Securities and Exchange Commission EDGAR (sec.gov, data.sec.gov)</li>
 <li>aiLayoffs.org</li>
 </ul>
-<p>Each of these sources has its own privacy policy, which governs their handling of standard HTTP request data. We encourage you to review them if you have concerns.</p>
+<p>Each source has its own privacy policy, which governs their handling of standard HTTP request data.</p>
 
 <h3>4.1 Applying to a job</h3>
 <p>When you tap "Apply Now", TrustJob opens the original job listing in your device's browser or the source app. From that point, you are subject to that source's terms and privacy policy. TrustJob does not transmit any data on your behalf during this transition.</p>
 
 <h2 id="third-party">5. Third-party services</h2>
-<p>TrustJob currently integrates with no third-party analytics, advertising, authentication, or cloud services. The only external communication is direct HTTP requests to the job sources listed above for the purpose of retrieving publicly available listings.</p>
+<p>TrustJob integrates with the following third-party services:</p>
+<ul>
+<li><strong>Google AdMob</strong> — serves the ads you see in the app (see section 6)</li>
+<li><strong>Google Play Billing</strong> — processes the one-time Supporter pack purchase</li>
+</ul>
+<p>The app does not use any other analytics, advertising, authentication, or cloud services.</p>
 
-<h2 id="future">6. Future account features</h2>
+<h2 id="ads">6. Advertising and purchases</h2>
+
+<h3>6.1 Ads</h3>
+<p>TrustJob displays interstitial advertisements served by Google AdMob. Ads appear no more than once every four job listings you open. We use <strong>non-personalized ads only</strong> — AdMob does not build a profile of you based on your activity across other apps or websites.</p>
+<p>Even with non-personalized ads, Google may still receive:</p>
+<ul>
+<li>A device or advertising identifier</li>
+<li>Your approximate location, derived from your IP address</li>
+<li>Ad interaction events (impression, click, dismissal)</li>
+<li>General device and OS information</li>
+</ul>
+<p>This data is collected and processed by Google, not by us. See Google's advertising privacy notice at <a href="https://policies.google.com/technologies/ads">policies.google.com/technologies/ads</a>.</p>
+
+<h3>6.2 Supporter pack</h3>
+<p>TrustJob offers a one-time in-app purchase called the <strong>Supporter pack</strong>. It permanently removes all ads and unlocks the "Hide propaganda" setting.</p>
+<p>Purchases are processed entirely by Google Play Billing. We do not receive your name, email, payment method, or any other personal information. We only receive a confirmation that the purchase was completed, which is stored locally on your device so the app knows to skip ads.</p>
+<p>Refunds are handled by Google Play according to their refund policy.</p>
+
+<h3>6.3 How to opt out of ads</h3>
+<p>You can permanently disable all advertising in TrustJob by purchasing the Supporter pack from the app's top bar.</p>
+
+<h2 id="future">7. Future account features</h2>
 <p>TrustJob does not currently offer user accounts, cloud backup, or cross-device synchronisation. If we introduce these features in a future release, they will:</p>
 <ul>
 <li><strong>Be optional.</strong> The app will continue to work fully without any account.</li>
 <li><strong>Require explicit consent.</strong> You will be asked to opt in before any account is created or any data is uploaded.</li>
 <li><strong>Be described in an updated version of this policy.</strong> We will publish a new effective date and notify users through the app and the Play Store listing before the feature is enabled.</li>
-<li><strong>Use established providers.</strong> If we add cloud backup, it will use Google services (such as Google Sign-In and Google Drive app data folder), which are governed by Google's own privacy policy.</li>
-<li><strong>Store the same data you already have on-device</strong> — saved jobs, tracked applications, and settings. Nothing additional will be collected.</li>
+<li><strong>Use established providers.</strong> If we add cloud backup, it will use Google services governed by Google's own privacy policy.</li>
 </ul>
-<p>Until such features are released and this policy is updated, TrustJob remains a fully offline, account-free app.</p>
 
-<h2 id="rights">7. Your rights</h2>
+<h2 id="rights">8. Your rights</h2>
 
-<h3>7.1 Under GDPR (EU/EEA/UK users)</h3>
-<p>Because TrustJob does not collect personal data, most GDPR rights are automatically satisfied. If we ever do collect personal data, you will have the right to:</p>
+<h3>8.1 Under GDPR (EU/EEA/UK users)</h3>
+<p>Where TrustJob handles personal data at all, it does so through Google AdMob (for advertising) and Google Play Billing (for purchases). You have the right to:</p>
 <ul>
-<li>Access the personal data we hold about you</li>
+<li>Access the personal data held about you</li>
 <li>Request correction or deletion of that data</li>
 <li>Object to or restrict processing</li>
 <li>Request data portability</li>
 <li>Lodge a complaint with your local data protection authority</li>
 </ul>
+<p>To exercise these rights against Google, see Google's privacy controls.</p>
 
-<h3>7.2 Under CCPA/CPRA (California users)</h3>
-<p>TrustJob does not sell, share, or disclose personal information. You have the right to know what personal information is collected (none), to request deletion (not applicable), and to opt out of sale (not applicable — we do not sell data).</p>
+<h3>8.2 Under CCPA/CPRA (California users)</h3>
+<p>TrustJob does not sell personal information. Advertising is delivered through Google AdMob with non-personalized ads only. You may opt out of all advertising by purchasing the Supporter pack.</p>
 
-<h3>7.3 Under other jurisdictions</h3>
-<p>If your jurisdiction grants additional privacy rights, those rights apply. Because we do not collect data, there is nothing for us to disclose, correct, or delete. To exercise any right, contact us using the details in section 12.</p>
+<h2 id="children">9. Children's privacy</h2>
+<p>TrustJob is intended for users aged 16 and older. We do not knowingly collect any data from children. The app's job listings are employment advertisements, which are not appropriate for children.</p>
 
-<h2 id="children">8. Children's privacy</h2>
-<p>TrustJob is intended for users aged 16 and older. We do not knowingly collect any data from children. Because the app collects no personal information whatsoever, it complies with the Children's Online Privacy Protection Act (COPPA) and equivalent regulations by design.</p>
-<p>If you believe a child has used the app in a manner that concerns you, contact us and we will investigate. Note that, since we have no backend and collect no data, there is nothing to remove from our side.</p>
+<h2 id="security">10. Security</h2>
+<p>All locally stored data remains on your device and is protected by Android's app sandboxing and, where enabled, device-level encryption. Communication with job sources and with Google's ad and billing services uses HTTPS.</p>
+<p>We do not accept user credentials, we do not transmit authentication tokens, and we do not operate a server that could be breached.</p>
 
-<h2 id="security">9. Security</h2>
-<p>All data stored by TrustJob remains on your device and is protected by Android's standard app sandboxing and, where enabled, device-level encryption. Because we operate no server, there is no database to breach and no data to leak on our side.</p>
-<p>Communication with job sources uses HTTPS. TrustJob does not accept user credentials, does not transmit authentication tokens, and does not expose an attack surface for credential theft.</p>
+<h2 id="international">11. International users</h2>
+<p>TrustJob can be installed on any Android device worldwide. The only cross-border data transfer is between your device and Google's AdMob and Play Billing services, governed by Google's privacy policy.</p>
 
-<h2 id="international">10. International users</h2>
-<p>TrustJob can be installed on any Android device worldwide. Because the app does not transmit personal data to us, there is no cross-border data transfer to disclose. Direct requests to job sources go from your device to those sources' servers; their own privacy policies govern that communication.</p>
-
-<h2 id="changes">11. Changes to this policy</h2>
+<h2 id="changes">12. Changes to this policy</h2>
 <p>We may update this policy when:</p>
 <ul>
 <li>We add a new feature that changes what data is handled</li>
 <li>We add or remove a third-party job source or integration</li>
 <li>Legal or regulatory requirements change</li>
 </ul>
-<p>When we update the policy, we will:</p>
-<ul>
-<li>Revise the "Last updated" date at the top of this page</li>
-<li>Describe the changes in a visible notice within the app before the change takes effect, if the change materially affects how data is handled</li>
-<li>Update the linked policy in the Google Play store listing</li>
-</ul>
-<p>Continued use of the app after a policy update constitutes acceptance of the revised policy.</p>
+<p>When we update the policy, we will revise the "Last updated" date at the top of this page, and describe the changes in a visible notice within the app before the change takes effect if the change materially affects how data is handled.</p>
 
-<h2 id="contact">12. Contact us</h2>
-<p>For any questions about this privacy policy or about how TrustJob handles (or does not handle) your data, contact:</p>
+<h2 id="contact">13. Contact us</h2>
+<p>For any questions about this privacy policy or about how TrustJob handles your data, contact:</p>
 <p>
 <strong>Email:</strong> <a href="mailto:true.orbital.creation@gmail.com">true.orbital.creation@gmail.com</a><br>
 </p>
 <p>We aim to respond to privacy inquiries within 7 days.</p>
 
 <footer>
-<p>TrustJob · Android · <a href="https://play.google.com/store/apps/details?id=com.orbitalcreation.trustjob">Google Play</a></p>
+<p>TrustJob · Android</p>
 <p>This policy applies only to the TrustJob Android application. Job listings displayed in the app are the property of their respective sources.</p>
 </footer>
 
